@@ -20,10 +20,14 @@ $(document).ready(function () {
             
             console.log(response);
 
-            $("#city-info").append($("<p>"(cityName)));
+            $("#city-name").html("<h3>" + cityName + "</h3>");
+            $("#temp").text("Temperature: " + temp + " Fahrenheit");
+            $("#humidity").text("Humidity: " + humidity + "%");
+            $("#wind-speed").text("Wind Speed: " + windSpeed + " MPH");
+
         });
 
-    })
+    });
 
 
 
